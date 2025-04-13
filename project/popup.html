@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Phishing Detector</title>
+  <meta charset="UTF-8">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>AI Phishing Detector</h1>
+      <div id="status" class="status">Analyzing...</div>
+    </div>
+    
+    <div class="result-container">
+      <div class="score-section">
+        <h2>Risk Score</h2>
+        <div id="riskScore" class="score">--</div>
+        <div id="riskLevel" class="risk-level"></div>
+      </div>
+
+      <div class="details-section">
+        <h2>Analysis Details</h2>
+        <ul id="issuesList" class="issues-list">
+        </ul>
+      </div>
+
+      <div class="suggestions-section">
+        <h2>Suggestions</h2>
+        <ul id="suggestionsList" class="suggestions-list">
+        </ul>
+      </div>
+
+      <div class="action-section">
+        <button id="learnMore" class="learn-more-btn">Learn More About Phishing</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
